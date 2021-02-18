@@ -6,8 +6,17 @@ public class DriverManagerFactory {
 
         DriverManager driverManager;
 
-        driverManager = new ChromeDriverManager();
+        switch (Type) {
 
+            case CHROME:
+                driverManager = new ChromeDriverManager();
+                break;
+            case FF:
+                driverManager = new FireFoxDriverManager();
+                break;
+            default:
+                driverManager = new ChromeDriverManager();
+        }
         return  driverManager;
     }
 
