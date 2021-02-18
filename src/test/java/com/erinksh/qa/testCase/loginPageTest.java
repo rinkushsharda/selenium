@@ -11,12 +11,8 @@ import org.testng.annotations.Test;
 
 public class loginPageTest extends TestBase {
 
-    TestBase t1;
-    WebDriver driver;
-
     @Test
     public void test(){
-
         initialize();
         loginPage lp = new loginPage();
         lp.login();

@@ -27,8 +27,8 @@ public class loginPage extends TestBase {
     public void login(){
 
         login.click();
-        username.sendKeys("rinku.neo@gmail.com");
-        password.sendKeys("Selena334@");
+        username.sendKeys(prop.getProperty("user"));
+        password.sendKeys(prop.getProperty("password"));
         loginBtn.click();
     }
 }
