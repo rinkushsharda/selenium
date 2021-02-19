@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="selenium" />
+        <module name="itp-selenium" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="itp-selenium" target="8" />
       <module name="selenium" target="8" />
     </bytecodeTargetLevel>
   </component>
