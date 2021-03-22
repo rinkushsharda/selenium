@@ -1,0 +1,20 @@
+{
+        "requestID": "{{requestID}}",
+        "relatedParties": [{
+                "role": "Customer",
+                "reference": "{{customerID}}"
+        }],
+        "owner": "{{requester}}",
+        "requester": "{{requester}}",
+        "mode": "{{mode}}",
+        "attrs": [{
+                "name": "billCycleId",
+                "value": "{{customerBillCycle}}"
+        }],
+        "catalogContextAttrs": [
+                {
+                        "name": "cbioSalesChannel",
+                        "value": "{{salesChannel}}"
+                }]
+
+}

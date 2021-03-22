@@ -1,0 +1,11 @@
+callingNumber = 1234564000
+callReference = 00FF12
+servedMsisdn = 345
+calledNumber = 001123
+calledDuration = 10
+localSequenceNumber = 2	
+serviceKey1 = 1
+serviceKey = 2
+java = nhuig
+test = 8520
+java1 = khdd

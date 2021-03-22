@@ -1,0 +1,411 @@
+{
+        "id": "{{id}}",
+        "scId": "{{scID}}",
+        "createdBy": "httpApi",
+        "createdDate": "{{createdDate}}",
+        "lastModifiedDate": "{{createdDate}}",
+        "modifiedBy": "httpApi",
+        "requestedCompletionDate": null,
+        "assignedPriority": 20,
+        "requestedStartDate": null,
+        "description": "w",
+        "notes": [
+                {
+                        "text": "4"
+                }
+        ],
+        "biType": "ProductOfferingOrder",
+        "action": "Add",
+        "attrs": null,
+        "productOffering": {
+                "id": "{{productOfferingId}}",
+                "effectiveDate": "{{createdDate}}"
+        },
+        "dueDate": null,
+        "product": {
+                "productId": null,
+                "productCharacteristics": [
+                        {
+                                "name": "version"
+                        },
+                        {
+                                "name": "instance_state"
+                        },
+                        {
+                                "name": "contractId",
+                                "value": "{{contractID}}"
+                        },
+                        {
+                                "name": "orderId"
+                        },
+                        {
+                                "name": "reasonCode"
+                        }
+                ],
+                "productPrice": null,
+                "isBundled": false,
+                "productSpecification": "PCPB_E2",
+                "resourceReferences": [
+                        {
+                                "id": "{{productSpecificationId}}"
+                        }
+                ],
+                "serviceReferences": [
+                        {
+                                "id": "{{productSpecificationServiceReference}}"
+                        }
+                ],
+                "action": "Add"
+        },
+        "resources": [
+                {
+                        "resourceCharacteristics": [
+                                {
+                                        "name": "hlrcode"
+                                },
+                                {
+                                        "name": "mainDirNum",
+                                        "value": "true"
+                                },
+                                {
+                                        "name": "market",
+                                        "value": "GSM"
+                                },
+                                {
+                                        "name": "subMarket",
+                                        "value": "GSM"
+                                },
+                                {
+                                        "name": "numberingPlan",
+                                        "value": "E.164"
+                                },
+                                {
+                                        "name": "resourceNumber",
+                                        "value": "{{resourceNumber}}"
+                                },
+                                {
+                                        "name": "network",
+                                        "value": "EUR01"
+                                },
+                                {
+                                        "name": "SDP_ID",
+                                        "value": "1"
+                                },
+                                {
+                                        "name": "version"
+                                },
+                                {
+                                        "name": "resourceExchangeRetentionMode"
+                                },
+                                {
+                                        "name": "resourceNumberExchange"
+                                },
+                                {
+                                        "name": "instance_state"
+                                }
+                        ],
+                        "resourceId": null,
+                        "rfs": {
+                                "rfsId": null,
+                                "serviceCandidate": null,
+                                "rfsSpecification": "CR_E2",
+                                "rfsCharacteristics": [
+                                        {
+                                                "name": "version"
+                                        },
+                                        {
+                                                "name": "instance_state"
+                                        }
+                                ],
+                                "id": "{{rfsIdLogical}}"
+                        },
+                        "resourceSpecification": "CM_E2",
+                        "resourceCandidate": null,
+                        "isLogical": true,
+                        "isCompound": false,
+                        "parentId": "{{rfsIdLogical}}",
+                        "physicalResourceId": null,
+                        "resourceType": null,
+                        "resourceNumber": null,
+                        "serialNumber": null,
+                        "id": "{{resouceSepecificationLogicalId}}",
+                        "action": "Add"
+                },
+                {
+                        "resourceCharacteristics": [
+                                {
+                                        "name": "network",
+                                        "value": "EUR01"
+                                },
+                                {
+                                        "name": "portId"
+                                },
+                                {
+                                        "name": "provisionToAF",
+                                        "value": "false"
+                                },
+                                {
+                                        "name": "simCardClass"
+                                },
+                                {
+                                        "name": "hlrcode"
+                                },
+                                {
+                                        "name": "imsi",
+                                        "value": "{{imsi}}"
+                                },
+                                {
+                                        "name": "serialNumber",
+                                        "value": "{{serialNumber}}"
+                                },
+                                {
+                                        "name": "subMarket",
+                                        "value": "GSM"
+                                },
+                                {
+                                        "name": "numberingPlan"
+                                },
+                                {
+                                        "name": "version"
+                                },
+                                {
+                                        "name": "instance_state"
+                                }
+                        ],
+                        "resourceId": null,
+                        "rfs": null,
+                        "resourceSpecification": "CS_E2",
+                        "resourceCandidate": null,
+                        "isLogical": false,
+                        "isCompound": false,
+                        "parentId": "{{rfsIdPhysical}}",
+                        "physicalResourceId": null,
+                        "resourceType": null,
+                        "resourceNumber": null,
+                        "serialNumber": null,
+                        "id": "{{resouceSepecificationPhysicalId}}",
+                        "action": "Add"
+                }
+        ],
+        "services": [
+                {
+                        "cfs": null,
+                        "rfs": [
+                                {
+                                        "rfsId": null,
+                                        "serviceCandidate": null,
+                                        "rfsSpecification": "CR_E2",
+                                        "rfsCharacteristics": [
+                                                {
+                                                        "name": "version"
+                                                },
+                                                {
+                                                        "name": "instance_state"
+                                                }
+                                        ],
+                                        "id": "{{rfsIdLogical}}"
+                                },
+                                {
+                                        "rfsId": null,
+                                        "serviceCandidate": null,
+                                        "rfsSpecification": "CR_E2",
+                                        "rfsCharacteristics": [
+                                                {
+                                                        "name": "version"
+                                                },
+                                                {
+                                                        "name": "instance_state"
+                                                }
+                                        ],
+                                        "id": "{{rfsIdLogical}}"
+                                }
+                        ],
+                        "serviceCharacteristics": [
+                                {
+                                        "name": "version"
+                                },
+                                {
+                                        "name": "instance_state"
+                                }
+                        ],
+                        "serviceCandidate": null,
+                        "serviceId": null,
+                        "cfsSpecification": "CFSS_Prepaid_Basic_E2",
+                        "serviceType": "CustomerFacingServiceSpec",
+                        "id": "{{cfsSpecificationLogical}}",
+                        "action": "Add",
+                        "serviceReferences": [
+                                {
+                                        "id": "{{rfsIdLogical}}"
+                                }
+                        ],
+                        "name": null
+                },
+                {
+                        "cfs": "CFSS_Prepaid_Basic_E2",
+                        "rfs": null,
+                        "serviceCharacteristics": [
+                                {
+                                        "name": "GLA",
+                                        "value": "GLUSG"
+                                },
+                                {
+                                        "name": "TAX",
+                                        "value": "ZERO"
+                                },
+                                {
+                                        "name": "CHARGING_ENGINE",
+                                        "value": "CS"
+                                },
+                                {
+                                        "name": "TECHNOLOGY",
+                                        "value": "GSM"
+                                },
+                                {
+                                        "name": "MAINACCOUNTTYPE",
+                                        "value": "C"
+                                },
+                                {
+                                        "name": "MARKET",
+                                        "value": "GSM"
+                                },
+                                {
+                                        "name": "MSISDNNP",
+                                        "value": "E.164"
+                                },
+                                {
+                                        "name": "PORTNP"
+                                },
+                                {
+                                        "name": "RERATING_SUPPORTED"
+                                },
+                                {
+                                        "name": "SERVICE",
+                                        "value": "MSIDN"
+                                },
+                                {
+                                        "name": "version"
+                                },
+                                {
+                                        "name": "instance_state"
+                                }
+                        ],
+                        "serviceCandidate": null,
+                        "serviceId": null,
+                        "cfsSpecification": "BSCS_CPRERFS",
+                        "serviceType": "BillingConfigurationSpec",
+                        "id": "{{cfsSpecificationPhysical}}",
+                        "action": "Add",
+                        "name": null
+                },
+                {
+                        "cfs": "CFSS_Prepaid_Basic_E2",
+                        "rfs": null,
+                        "serviceCharacteristics": [
+                                {
+                                        "name": "version"
+                                },
+                                {
+                                        "name": "instance_state"
+                                }
+                        ],
+                        "serviceCandidate": null,
+                        "serviceId": null,
+                        "cfsSpecification": "CR_E2",
+                        "serviceType": "ResourceFacingServiceSpec",
+                        "id": "{{rfsIdLogical}}",
+                        "action": "Add",
+                        "resourceReferences": [
+                                {
+                                        "id": "{{resouceSepecificationLogicalId}}"
+                                }
+                        ],
+                        "name": null
+                },
+                {
+                        "cfs": "CFSS_Prepaid_Basic_E2",
+                        "rfs": null,
+                        "serviceCharacteristics": [
+                                {
+                                        "name": "Purpose",
+                                        "value": "SC"
+                                },
+                                {
+                                        "name": "version"
+                                },
+                                {
+                                        "name": "instance_state"
+                                }
+                        ],
+                        "serviceCandidate": null,
+                        "serviceId": null,
+                        "cfsSpecification": "CS_SC_500",
+                        "serviceType": "ChargingConfigurationSpec",
+                        "id": "{{cfsSpecificationService3}}",
+                        "action": "Add",
+                        "name": null
+                }
+        ],
+        "relatedEntities": [
+                {
+                        "type": "Contract",
+                        "name": null,
+                        "reference": "{{contractID}}",
+                        "entity": {
+                                "contractCreationInformation": {
+                                        "attributes": [
+                                                {
+                                                        "name": "MARKET",
+                                                        "value": "GSM"
+                                                },
+                                                {
+                                                        "name": "SUBMARKET",
+                                                        "value": "GSM"
+                                                },
+                                                {
+                                                        "name": "NETWORK",
+                                                        "value": "EUR01"
+                                                },
+                                                {
+                                                        "name": "CO_SIGNED_DATE",
+                                                        "value": "{{createdDate}}"
+                                                },
+                                                {
+                                                        "name": "CALL_DETAIL",
+                                                        "value": "R"
+                                                },
+                                                {
+                                                        "name": "CO_OP_DIR",
+                                                        "value": "false"
+                                                },
+                                                {
+                                                        "name": "CO_PSTN_DIR",
+                                                        "value": "true"
+                                                },
+                                                {
+                                                        "name": "SDP_ID",
+                                                        "value": "1"
+                                                }
+                                        ]
+                                }
+                        },
+                        "entitySpecification": null,
+                        "dependentEntityName": null
+                }
+        ],
+        "biSpecification": "e",
+        "requester": null,
+        "requestID": null,
+        "relatedItems": null,
+        "quantity": {
+                "amount": 1,
+                "units": "4",
+                "overrideAmount": null
+        },
+        "relatedParties": [
+                {
+                        "role": "Customer",
+                        "reference": "{{CustomerID}}"
+                }
+        ]
+}

@@ -1,0 +1,27 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://ericsson.com/services/ws_CIL_6/customerread" xmlns:ses="http://ericsson.com/services/ws_CIL_6/sessionchange">
+    <soapenv:Header>
+        <Security xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <UsernameToken>
+                <Username>ADMX</Username>
+                <Password>ADMX</Password>
+            </UsernameToken>
+        </Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <cus:customerReadRequest>
+            <cus:inputAttributes>
+                <cus:csId></cus:csId>
+                <cus:csIdPub>{{customerID}}</cus:csIdPub>
+                <cus:syncWithDb>1</cus:syncWithDb>
+            </cus:inputAttributes>
+            <cus:sessionChangeRequest>
+                <ses:values>
+                    <ses:item>
+                        <ses:key>BU_ID</ses:key>
+                        <ses:value>2</ses:value>
+                    </ses:item>
+                </ses:values>
+            </cus:sessionChangeRequest>
+        </cus:customerReadRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

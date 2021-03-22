@@ -1,0 +1,10 @@
+{
+        "requestID": "{{requestID}}",
+        "relatedParties": [{
+                "role": "Customer",
+                "reference": "{{customerID}}"
+        }],
+        "owner": "{{requester}}",
+        "requester": "{{requester}}",
+        "mode": "{{mode}}"
+}

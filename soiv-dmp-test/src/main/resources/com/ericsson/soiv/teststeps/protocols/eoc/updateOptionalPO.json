@@ -1,0 +1,446 @@
+{
+        "id": "{{id}}",
+        "scId": "{{scID}}",
+        "createdBy": "httpApi",
+        "createdDate": "{{createdDate}}",
+        "lastModifiedDate": "{{createdDate}}",
+        "modifiedBy": "httpApi",
+        "requestedCompletionDate": null,
+        "assignedPriority": 20,
+        "requestedStartDate": null,
+        "description": "w",
+        "notes": [
+                {
+                        "text": "4"
+                }
+        ],
+        "biType": "ProductOfferingOrder",
+        "action": "Add",
+        "attrs": null,
+        "productOffering": {
+                "id": "PO_CDS_BSCS_Opt_GSM_Slim",
+                "effectiveDate": "{{createdDate}}"
+        },
+        "dueDate": null,
+        "product": {
+                "productId": null,
+                "productCharacteristics": [
+                        {
+                                "name": "version"
+                        },
+                        {
+                                "name": "instance_state"
+                        },
+                        {
+                                "name": "contractId",
+                                "value": "{{contractID}}"
+                        },
+                        {
+                                "name": "orderId"
+                        },
+                        {
+                                "name": "reasonCode"
+                        }
+                ],
+                "productPrice": null,
+                "isBundled": false,
+                "productSpecification": "{{productSpecification}}",
+                "resourceReferences": [
+                        {
+                                "id": "366877"
+                        }
+                ],
+                "serviceReferences": [
+                        {
+                                "id": "366873"
+                        }
+                ],
+                "action": "Add"
+        },
+        "resources": [
+                {
+                        "resourceCharacteristics": [
+                                {
+                                        "name": "hlrcode"
+                                },
+                                {
+                                        "name": "mainDirNum",
+                                        "value": "true"
+                                },
+                                {
+                                        "name": "prefix"
+                                },
+                                {
+                                        "name": "resourceAutoProvision"
+                                },
+                                {
+                                        "name": "market",
+                                        "value": "ISD"
+                                },
+                                {
+                                        "name": "subMarket",
+                                        "value": "ISDNi"
+                                },
+                                {
+                                        "name": "numberingPlan",
+                                        "value": "E.164"
+                                },
+                                {
+                                        "name": "resourceNumber",
+                                        "value": "{{resourceNumber}}"
+                                },
+                                {
+                                        "name": "network",
+                                        "value": "TECHN"
+                                },
+                                {
+                                        "name": "SDP_ID"
+                                },
+                                {
+                                        "name": "version"
+                                },
+                                {
+                                        "name": "resourceExchangeGracePeriod"
+                                },
+                                {
+                                        "name": "resourceExchangeRetentionMode"
+                                },
+                                {
+                                        "name": "resourceNumberExchange"
+                                },
+                                {
+                                        "name": "instance_state"
+                                }
+                        ],
+                        "resourceId": null,
+                        "rfs": {
+                                "rfsId": null,
+                                "serviceCandidate": null,
+                                "rfsSpecification": "Common_RFSS_BSCS_MSISDN_CDS_Slim",
+                                "rfsCharacteristics": [
+                                        {
+                                                "name": "version"
+                                        },
+                                        {
+                                                "name": "instance_state"
+                                        }
+                                ],
+                                "id": "366875"
+                        },
+                        "resourceSpecification": "Common_BSCS_MSISDN_CDS_Slim",
+                        "resourceCandidate": null,
+                        "isLogical": true,
+                        "isCompound": false,
+                        "parentId": "366875",
+                        "physicalResourceId": null,
+                        "resourceType": null,
+                        "resourceNumber": null,
+                        "serialNumber": null,
+                        "id": "366876",
+                        "action": "Add"
+                },
+                {
+                        "resourceCharacteristics": [
+                                {
+                                        "name": "simCardClass"
+                                },
+                                {
+                                        "name": "deviceID",
+                                        "value": "894921000000120434"
+                                },
+                                {
+                                        "name": "inventoryID"
+                                },
+                                {
+                                        "name": "version"
+                                },
+                                {
+                                        "name": "deviceIdExchange"
+                                },
+                                {
+                                        "name": "simcardExchangeRetentionMode"
+                                },
+                                {
+                                        "name": "instance_state"
+                                }
+                        ],
+                        "resourceId": null,
+                        "rfs": null,
+                        "resourceSpecification": "PRS_CDS_SIM_Device_Slim",
+                        "resourceCandidate": null,
+                        "isLogical": false,
+                        "isCompound": false,
+                        "parentId": "366872",
+                        "physicalResourceId": null,
+                        "resourceType": null,
+                        "resourceNumber": null,
+                        "serialNumber": null,
+                        "id": "366877",
+                        "action": "Add",
+                        "resourceReferences": [
+                                {
+                                        "id": "366879"
+                                }
+                        ]
+                },
+                {
+                        "resourceCharacteristics": [
+                                {
+                                        "name": "portId"
+                                },
+                                {
+                                        "name": "provisionToAF",
+                                        "value": "false"
+                                },
+                                {
+                                        "name": "hlrcode"
+                                },
+                                {
+                                        "name": "market",
+                                        "value": "ISD"
+                                },
+                                {
+                                        "name": "subMarket",
+                                        "value": "ISDNi"
+                                },
+                                {
+                                        "name": "numberingPlan",
+                                        "value": "IMSI"
+                                },
+                                {
+                                        "name": "resourceNumber",
+                                        "value": "262470000120434"
+                                },
+                                {
+                                        "name": "network",
+                                        "value": "TECHN"
+                                },
+                                {
+                                        "name": "version"
+                                },
+                                {
+                                        "name": "resourceExchangeRetentionMode"
+                                },
+                                {
+                                        "name": "resourceNumberExchange"
+                                },
+                                {
+                                        "name": "instance_state"
+                                }
+                        ],
+                        "resourceId": null,
+                        "rfs": null,
+                        "resourceSpecification": "LRS_CDS_IMSI_Slim",
+                        "resourceCandidate": null,
+                        "isLogical": true,
+                        "isCompound": false,
+                        "parentId": "366877",
+                        "physicalResourceId": null,
+                        "resourceType": null,
+                        "resourceNumber": null,
+                        "serialNumber": null,
+                        "id": "366879",
+                        "action": "Add"
+                }
+        ],
+        "services": [
+                {
+                        "cfs": null,
+                        "rfs": [
+                                {
+                                        "rfsId": null,
+                                        "serviceCandidate": null,
+                                        "rfsSpecification": "Common_RFSS_BSCS_MSISDN_CDS_Slim",
+                                        "rfsCharacteristics": [
+                                                {
+                                                        "name": "version"
+                                                },
+                                                {
+                                                        "name": "instance_state"
+                                                }
+                                        ],
+                                        "id": "366875"
+                                },
+                                {
+                                        "rfsId": null,
+                                        "serviceCandidate": null,
+                                        "rfsSpecification": "Common_RFSS_BSCS_MSISDN_CDS_Slim",
+                                        "rfsCharacteristics": [
+                                                {
+                                                        "name": "version"
+                                                },
+                                                {
+                                                        "name": "instance_state"
+                                                }
+                                        ],
+                                        "id": "366875"
+                                }
+                        ],
+                        "serviceCharacteristics": [
+                                {
+                                        "name": "version"
+                                },
+                                {
+                                        "name": "instance_state"
+                                }
+                        ],
+                        "serviceCandidate": null,
+                        "serviceId": null,
+                        "cfsSpecification": "CFSS_BSCS_MSISDN_CDS_Slim",
+                        "serviceType": "CustomerFacingServiceSpec",
+                        "id": "366873",
+                        "action": "Add",
+                        "serviceReferences": [
+                                {
+                                        "id": "366875"
+                                }
+                        ],
+                        "name": null
+                },
+                {
+                        "cfs": "CFSS_BSCS_MSISDN_CDS_Slim",
+                        "rfs": null,
+                        "serviceCharacteristics": [
+                                {
+                                        "name": "GLA",
+                                        "value": "GLUSG"
+                                },
+                                {
+                                        "name": "TAX",
+                                        "value": "ZERO"
+                                },
+                                {
+                                        "name": "CHARGING_ENGINE",
+                                        "value": "BSCS"
+                                },
+                                {
+                                        "name": "TECHNOLOGY",
+                                        "value": "GSM"
+                                },
+                                {
+                                        "name": "MARKET",
+                                        "value": "ISD"
+                                },
+                                {
+                                        "name": "MSISDNNP",
+                                        "value": "E.164"
+                                },
+                                {
+                                        "name": "PORTNP"
+                                },
+                                {
+                                        "name": "SERVICE",
+                                        "value": "CBBMV"
+                                },
+                                {
+                                        "name": "CURRENCY",
+                                        "value": "EUR"
+                                },
+                                {
+                                        "name": "version"
+                                },
+                                {
+                                        "name": "instance_state"
+                                }
+                        ],
+                        "serviceCandidate": null,
+                        "serviceId": null,
+                        "cfsSpecification": "BSCS_CBBMVF",
+                        "serviceType": "BillingConfigurationSpec",
+                        "id": "366874",
+                        "action": "Add",
+                        "name": null
+                },
+                {
+                        "cfs": "CFSS_BSCS_MSISDN_CDS_Slim",
+                        "rfs": null,
+                        "serviceCharacteristics": [
+                                {
+                                        "name": "version"
+                                },
+                                {
+                                        "name": "instance_state"
+                                }
+                        ],
+                        "serviceCandidate": null,
+                        "serviceId": null,
+                        "cfsSpecification": "Common_RFSS_BSCS_MSISDN_CDS_Slim",
+                        "serviceType": "ResourceFacingServiceSpec",
+                        "id": "366875",
+                        "action": "Add",
+                        "resourceReferences": [
+                                {
+                                        "id": "366876"
+                                }
+                        ],
+                        "name": null
+                }
+        ],
+        "relatedEntities": [
+                {
+                        "type": "Contract",
+                        "name": null,
+                        "reference": "{{contractID}}",
+                        "entity": {
+                                "contractCreationInformation": {
+                                        "attributes": [
+                                                {
+                                                        "name": "MARKET",
+                                                        "value": "ISD"
+                                                },
+                                                {
+                                                        "name": "SUBMARKET",
+                                                        "value": "ISDNi"
+                                                },
+                                                {
+                                                        "name": "NETWORK",
+                                                        "value": "TECHN"
+                                                },
+                                                {
+                                                        "name": "CO_SIGNED_DATE",
+                                                        "value": "{{createdDate}}"
+                                                },
+                                                {
+                                                        "name": "CALL_DETAIL",
+                                                        "value": "R"
+                                                },
+                                                {
+                                                        "name": "CO_OP_DIR",
+                                                        "value": "false"
+                                                },
+                                                {
+                                                        "name": "CO_PSTN_DIR",
+                                                        "value": "true"
+                                                },
+                                                {
+                                                        "name": "SDP_ID",
+                                                        "value": "1"
+                                                }
+                                        ]
+                                }
+                        },
+                        "entitySpecification": null,
+                        "dependentEntityName": null
+                }
+        ],
+        "biSpecification": "e",
+        "requester": null,
+        "requestID": null,
+        "relatedItems": [
+                {
+                        "role": "ReliesOn",
+                        "reference": "366758"
+                }
+        ],
+        "quantity": {
+                "amount": 1,
+                "units": "4",
+                "overrideAmount": null
+        },
+        "relatedParties": [
+                {
+                        "role": "Customer",
+                        "reference": "{{CustomerID}}"
+                }
+        ]
+}

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+      <methodCall>
+
+         <methodName>GetOffers</methodName>
+
+         <params>
+
+            <param>
+
+               <value>
+
+                  <struct>
+
+                     <member>
+
+                        <name>originNodeType</name>
+
+                        <value>
+
+                           <string>EXT</string>
+
+                        </value>
+
+                     </member>
+
+                     <member>
+
+                        <name>originHostName</name>
+
+                        <value>
+
+                           <string>EXT</string>
+
+                        </value>
+
+                     </member>
+
+                     <member>
+
+                        <name>originTransactionID</name>
+
+                        <value>
+
+                           <string>021027001</string>
+
+                        </value>
+
+                     </member>
+
+                     <member>
+
+                        <name>originTimeStamp</name>
+
+                        <value>
+
+                           <dateTime.iso8601>20150422T14:15:21+0200</dateTime.iso8601>
+
+                        </value>
+
+                     </member>
+
+                     <member>
+
+                        <name>subscriberNumber</name>
+
+                        <value>
+
+                           <string>{{subscriberNumber}}</string>
+
+                        </value>
+
+                     </member>
+
+                     <member>
+
+                        <name>subscriberNumberNAI</name>
+
+                        <value>
+
+                           <i4>1</i4>
+
+                        </value>
+
+                     </member>
+
+                     <member>
+
+                        <name>offerRequestedTypeFlag</name>
+
+                        <value>
+
+                           <string>11111000</string>
+
+                        </value>
+
+                     </member>
+
+                     <member>
+
+                        <name>requestTreeParameterSetsFlag</name>
+
+                        <value>
+
+                           <boolean>1</boolean>
+
+                        </value>
+
+                     </member>
+
+                     <member>
+
+                        <name>negotiatedCapabilities</name>
+
+                        <value>
+
+                           <array>
+
+                              <data>
+
+                                 <value>
+
+                                    <i4>809988804</i4>
+
+                                 </value>
+
+                                 <value>
+
+                                    <i4>458732</i4>
+
+                                 </value>
+
+                              </data>
+
+                           </array>
+
+                        </value>
+
+                     </member>
+
+                  </struct>
+
+               </value>
+
+            </param>
+
+         </params>
+
+      </methodCall>

@@ -1,0 +1,42 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gen="http://ericsson.com/services/ws_CIL_6/genericdirectorynumbersearch" xmlns:ses="http://ericsson.com/services/ws_CIL_6/sessionchange">
+    <soapenv:Header>
+        <Security xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <UsernameToken>
+                <Username>ADMX</Username>
+                <Password>ADMX</Password>
+            </UsernameToken>
+        </Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <gen:genericDirectoryNumberSearchRequest>
+            <!--You may enter the following 2 items in any order-->
+            <!--Optional:-->
+            <gen:inputAttributes>
+                <gen:npcodePub>{{npcodePub}}</gen:npcodePub>
+                <gen:plcodePub>{{plcodePub}}</gen:plcodePub>
+                <gen:submIdPub>{{submIdPub}}</gen:submIdPub>
+                <gen:hlcode>{{hlCode}}</gen:hlcode>
+                <gen:statuses>
+                    <gen:dnStatus>r</gen:dnStatus>
+                </gen:statuses>
+                <gen:reservation>false</gen:reservation>
+                <gen:rscode>{{rsCode}}</gen:rscode>
+                <gen:csControlled>{{csControlled}}</gen:csControlled>
+                <gen:searchCount>{{searchResourceCount}}</gen:searchCount>
+                <dirnum></dirnum>
+            </gen:inputAttributes>
+            <!--Optional:-->
+            <gen:sessionChangeRequest>
+                <!--Optional:-->
+                <ses:values>
+                    <!--1 or more repetitions:-->
+                    <ses:item>
+                        <!--You may enter the following 2 items in any order-->
+                        <ses:key>BU_ID</ses:key>
+                        <ses:value>2</ses:value>
+                    </ses:item>
+                </ses:values>
+            </gen:sessionChangeRequest>
+        </gen:genericDirectoryNumberSearchRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

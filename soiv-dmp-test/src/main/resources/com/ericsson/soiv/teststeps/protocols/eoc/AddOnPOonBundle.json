@@ -1,0 +1,67 @@
+{
+        "scId" : "{{scID}}",
+        "biSpecification" : "e",
+        "assignedPriority" : 20,
+        "description" : "w",
+        "biType" : "ProductOfferingOrder",
+        "action" : "Add",
+        "relatedParties" : [{
+                "role" : "Customer",
+                "reference" : "{{customerID}}"
+        }
+        ],
+        "relatedEntities" : [{
+                "entity" : {
+                        "contractCreationInformation" : {
+                                "attributes" : [{
+                                        "name" : "MARKET",
+                                        "value" : "GSM"
+                                }, {
+                                        "name" : "SUBMARKET",
+                                        "value" : "GSM"
+                                }, {
+                                        "name" : "NETWORK",
+                                        "value" : "EUR01"
+                                }, {
+                                        "name" : "CO_SIGNED_DATE",
+                                        "value" : "{{coDate}}"
+                                }, {
+                                        "name" : "CALL_DETAIL",
+                                        "value" : "R"
+                                }, {
+                                        "name" : "CO_OP_DIR",
+                                        "value" : "false"
+                                }, {
+                                        "name" : "CO_PSTN_DIR",
+                                        "value" : "true"
+                                }, {
+                                        "name" : "SDP_ID",
+                                        "value" : "{{sdpID}}"
+                                }
+                                ]
+                        }
+                },
+                "type" : "Contract",
+                "reference" : "{{contractID}}"
+        }
+        ],
+        "relatedItems": [
+
+                {
+                        "role": "ChildOf",
+                        "reference": "{{basicPoID}}"
+                }
+        ],
+        "quantity" : {
+                "amount" : 1.0,
+                "units" : "4"
+        },
+        "notes" : [{
+                "text" : "4"
+        }
+        ],
+        "attrs" : null,
+        "productOffering" : {
+                "id" : "{{addOnPO}}"
+        }
+}

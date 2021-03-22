@@ -1,0 +1,14 @@
+<Request Operation="AddTarget" SessionId="jBQfZA9K" Origin="GUI" MO="TraceEventLog">
+    <Target>{{MSISDN}}</Target>
+    <Route>FSC-UssdHD</Route>
+    <Route>PSC-BlockHandler</Route>
+    <Route>PSC-CIPDiameter</Route>
+    <Route>PSC-ConfigHandler</Route>
+    <Route>PSC-DCIPDiameter</Route>
+    <Route>PSC-ExternalNotification</Route>
+    <Route>PSC-PPASInterface</Route>
+    <Route>PSC-SDPInapHD</Route>
+    <Route>PSC-SogInterface</Route>
+    <Route>PSC-SubscriberHandler</Route>
+    <Route>PSC-TrafficHandler</Route>
+</Request>

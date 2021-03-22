@@ -1,0 +1,45 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://ericsson.com/services/ws_CIL_6/customercreate" xmlns:mon="http://lhsgroup.com/lhsws/money" xmlns:ses="http://ericsson.com/services/ws_CIL_5/sessionchange" xmlns:cus1="http://ericsson.com/services/ws_CMI_5/customernew" xmlns:pay="http://ericsson.com/services/ws_CIL_6/paymentarrangementwrite" xmlns:add="http://ericsson.com/services/ws_CIL_6/addresswrite" xmlns:cus2="http://ericsson.com/services/ws_CIL_6/customerinfowrite" xmlns:cus3="http://ericsson.com/services/ws_CIL_6/customerwrite">
+    <soapenv:Header>
+        <Security xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <UsernameToken>
+                <Username>ADMX</Username>
+                <Password>ADMX</Password>
+            </UsernameToken>
+        </Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <cus:customerCreateRequest>
+            <cus:inputAttributes>
+                <cus:customerNew>
+                    <cus:paymentResp>true</cus:paymentResp>
+                    <cus1:rpcode>1</cus1:rpcode>
+                    <cus:prgCode>1</cus:prgCode>
+                </cus:customerNew>
+                <cus:paymentArrangementWrite>
+                    <pay:cspPmntId>-1</pay:cspPmntId>
+                </cus:paymentArrangementWrite>
+                <cus:addresses>
+                    <cus:item>
+                        <cus:addressWrite>
+                            <add:adrSeq>0</add:adrSeq>
+                        </cus:addressWrite>
+                    </cus:item>
+                </cus:addresses>
+                <cus:customerInfoWrite></cus:customerInfoWrite>
+                <cus:customerWrite>
+                    <cus3:csStatus>a</cus3:csStatus>
+                    <cus3:rsCode>1</cus3:rsCode>
+                    <cus3:csBillcycle>{{customerBillCycle}}</cus3:csBillcycle>
+                </cus:customerWrite>
+            </cus:inputAttributes>
+            <cus:sessionChangeRequest>
+                <ses:values>
+                    <ses:item>
+                        <ses:key>BU_ID</ses:key>
+                        <ses:value>2</ses:value>
+                    </ses:item>
+                </ses:values>
+            </cus:sessionChangeRequest>
+        </cus:customerCreateRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

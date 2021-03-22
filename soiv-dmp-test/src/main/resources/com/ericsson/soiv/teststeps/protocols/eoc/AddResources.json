@@ -1,0 +1,11 @@
+{
+        "resourceCharacteristics": [{
+                "name": "deviceID",
+                "value": "{{deviceID}}"
+        }
+        ],
+        "rfs": {
+                "id": "{{parentRFSId}}"
+        },
+        "resourceSpecification": "{{PRSName}}"
+}

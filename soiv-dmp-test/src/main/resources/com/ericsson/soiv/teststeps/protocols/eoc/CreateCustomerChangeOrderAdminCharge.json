@@ -1,0 +1,30 @@
+{
+        "requester": "{{orderOwner}}",
+        "scId": "{{scID}}",
+        "action": "AddAdminCharge",
+        "relatedEntities": [
+                {
+                        "type": "Contract",
+                        "reference": "{{contractId}}"
+                }
+        ],
+        "attrs": [
+                {
+                        "name": "EventCode",
+                        "value": "{{eventCode}}"
+
+                },
+                {
+                        "name": "Price",
+                        "value": "{{price}}"
+
+                }
+        ],
+        "relatedParties": [
+                {
+                        "role": "Customer",
+                        "reference": "{{customerID}}"
+                }
+        ],
+        "biType": "CustomerChangeOrder"
+}

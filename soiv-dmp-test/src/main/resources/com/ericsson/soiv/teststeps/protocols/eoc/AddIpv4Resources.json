@@ -1,0 +1,16 @@
+{
+        "resourceCharacteristics": [
+            {
+                "name": "resourceNumber",
+                "value": "{{ExtraIPv4}}"
+            },
+            {
+                "name": "mainDirNum",
+                "value": "false"
+            }
+        ],
+        "rfs": {
+            "id": "{{rfsID}}"
+        },
+        "resourceSpecification": "{{resourceSpecification}}"
+    }

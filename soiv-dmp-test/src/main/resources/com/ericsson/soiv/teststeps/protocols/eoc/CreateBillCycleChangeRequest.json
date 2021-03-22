@@ -1,0 +1,36 @@
+{
+        "scId" : "{{scID}}",
+        "parentOrderItemId" : null,
+        "createdBy" : null,
+        "createdDate" : null,
+        "lastModifiedDate" : null,
+        "modifiedBy" : null,
+        "requestedCompletionDate" : null,
+        "assignedPriority" : null,
+        "requestedStartDate" : null,
+        "relatedParties" : [{
+                "role" : "Customer",
+                "reference" : "{{customerID}}"
+        }
+        ],
+        "notes" : null,
+        "biType" : "CustomerChangeOrder",
+        "action" : "omCBIOBillCyclePOOIAction",
+        "attrs" : [{
+                "name" : "oldBillCycleId",
+                "value" : "{{oldBillCycle}}"
+        }, {
+                "name" : "billCycleId",
+                "value" : "{{newBillCycle}}"
+        }, {
+                "name" : "billCycleComment",
+                "value" : "Change Bill Cycle"
+        }
+        ],
+        "description" : null,
+        "biSpecification" : null,
+        "requester" : null,
+        "requestID" : null,
+        "dueDate" : null,
+        "relatedScItems" : null
+}

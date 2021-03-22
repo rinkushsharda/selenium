@@ -1,0 +1,36 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://ericsson.com/services/ws_CIL_6/storagemediumsearch" xmlns:ses="http://ericsson.com/services/ws_CIL_6/sessionchange">
+    <soapenv:Header>
+        <Security xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <UsernameToken>
+                <Username>ADMX</Username>
+                <Password>ADMX</Password>
+            </UsernameToken>
+        </Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <stor:storageMediumSearchRequest>
+            <!--You may enter the following 2 items in any order-->
+            <!--Optional:-->
+            <stor:inputAttributes>
+                <stor:plcodePub>{{plcodePub}}</stor:plcodePub>
+                <stor:submIdPub>{{submIdPub}}</stor:submIdPub>
+                <stor:hlcode>{{hlCode}}</stor:hlcode>
+                <stor:srchCount>{{srchCount}}</stor:srchCount>
+                <stor:reservation>false</stor:reservation>
+                <stor:stmedno></stor:stmedno>
+            </stor:inputAttributes>
+            <!--Optional:-->
+            <stor:sessionChangeRequest>
+                <!--Optional:-->
+                <ses:values>
+                    <!--1 or more repetitions:-->
+                    <ses:item>
+                        <!--You may enter the following 2 items in any order-->
+                        <ses:key>BU_ID</ses:key>
+                        <ses:value>2</ses:value>
+                    </ses:item>
+                </ses:values>
+            </stor:sessionChangeRequest>
+        </stor:storageMediumSearchRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

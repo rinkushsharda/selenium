@@ -1,0 +1,29 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://ericsson.com/services/ws_CIL_6/portssearch" xmlns:ses="http://ericsson.com/services/ws_CIL_6/sessionchange">
+   <soapenv:Header>
+        <Security xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <UsernameToken>
+                <Username>ADMX</Username>
+                <Password>ADMX</Password>
+            </UsernameToken>
+        </Security>
+    </soapenv:Header>
+   <soapenv:Body> 
+      <por:portsSearchRequest> 
+         <por:inputAttributes> 
+            <por:submIdPub>{{submIdPub}}</por:submIdPub> 
+            <por:portNpPub>{{portNpPub}}</por:portNpPub> 
+            <por:plcodePub>{{plcodePub}}</por:plcodePub> 
+            <por:hlcode>{{hlCode}}</por:hlcode> 
+            <por:srchCount>1</por:srchCount> 
+         </por:inputAttributes> 
+         <por:sessionChangeRequest> 
+            <ses:values> 
+               <ses:item> 
+                  <ses:key>BU_ID</ses:key> 
+                  <ses:value>2</ses:value> 
+               </ses:item> 
+            </ses:values> 
+         </por:sessionChangeRequest> 
+      </por:portsSearchRequest> 
+   </soapenv:Body>
+</soapenv:Envelope>
